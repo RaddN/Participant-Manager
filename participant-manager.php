@@ -501,10 +501,6 @@ if ( ! class_exists( 'Participant_Manager_Plugin', false ) ) {
 			<div class="pm-frontend">
 				<form method="post" class="pm-form pm-verification-form">
 					<?php wp_nonce_field( 'participant_manager_verify', 'participant_manager_verify_nonce' ); ?>
-					<div class="pm-form-header">
-						<span class="pm-form-icon" aria-hidden="true"></span>
-						<h2><?php esc_html_e( 'Participant Verification', 'participant-manager' ); ?></h2>
-					</div>
 					<div class="pm-row">
 						<label for="participant-manager-registration-no"><?php esc_html_e( 'Registration No', 'participant-manager' ); ?></label>
 						<input type="text" id="participant-manager-registration-no" name="registration_no" placeholder="<?php esc_attr_e( 'Registration No', 'participant-manager' ); ?>" required>
