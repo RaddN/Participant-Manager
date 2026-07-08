@@ -2,14 +2,19 @@
 Contributors: Raihan Hossain
 Tags: participant, management, permissions
 Requires at least: 5.0
-Tested up to: 6.0
-Stable tag: 1.1
+Tested up to: 7.0
+Requires PHP: 7.4
+Stable tag: 1.5
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+Manage participant registrations, permissions, and verification from WordPress.
 
 == Description ==
 
-Participant Manager is a WordPress plugin that allows you to manage participants with registration details and user permissions. This plugin provides a user-friendly interface to add, edit, and delete participant data, as well as manage user permissions for accessing participant information.
+Participant Manager is a WordPress plugin that allows you to manage participants with registration details and user permissions. This plugin provides an interface to add, edit, and delete participant data, as well as manage user permissions for accessing participant information.
+
+Use the `[participant_verification]` shortcode on a public page to let visitors verify a registration number and passport number.
 
 == Installation ==
 
@@ -31,20 +36,28 @@ Participant Manager is a WordPress plugin that allows you to manage participants
 2. Select the users you want to grant or revoke permissions for.
 3. Click "Update Permissions."
 
+== Privacy ==
+
+Participant Manager stores participant names, registration numbers, passport numbers, passport issuing countries, registration status, and optional cancellation reasons in custom database tables. This data is not automatically linked to WordPress user email addresses.
+
 == Changelog ==
+
+= 1.5 =
+* Hardened request handling, database operations, nonces, escaping, and admin/frontend presentation.
 
 = 1.1 =
 * Initial release of the Participant Manager plugin.
 
 == Upgrade Notice ==
 
-= 1.1 =
-Initial release. Ensure compatibility with your WordPress installation.
+= 1.5 =
+Security and interface hardening update.
 
 == Screenshots ==
 
-1. **Participant Management Interface**: Screenshot of the participant management dashboard.
-2. **User Permissions Page**: Screenshot of the user permissions management interface.
+1. Participant management interface.
+2. Add participant form.
+3. User permissions interface.
 
 == Author Information ==
 
@@ -52,4 +65,4 @@ This plugin is developed by Raihan Hossain. For support or inquiries, please vis
 
 == License ==
 
-This plugin is licensed under the GNU General Public License v2 or later. See the [GNU General Public License](http://www.gnu.org/licenses/gpl-2.0.html) for more details.
+This plugin is licensed under the GNU General Public License v2 or later. See the [GNU General Public License](https://www.gnu.org/licenses/gpl-2.0.html) for more details.

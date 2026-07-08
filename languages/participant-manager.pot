@@ -1,0 +1,51 @@
+# This is a template file for the Participant Manager plugin.
+# It contains all the translatable strings used in the plugin.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Participant Manager\n"
+"Report-Msgid-Bugs-To: https://www.example.com/support\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: YOUR NAME <YOUR EMAIL>\n"
+"Language-Team: LANGUAGE <EMAIL>\n"
+"Language: \n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: participant-manager.php:12
+msgid "Participant Manager"
+msgstr ""
+
+#: participant-manager.php:15
+msgid "Manage participants with registration details and user permissions."
+msgstr ""
+
+#: admin.php:23
+msgid "Add New Participant"
+msgstr ""
+
+#: admin.php:35
+msgid "User Permissions"
+msgstr ""
+
+#: admin.php:42
+msgid "Update Permissions"
+msgstr ""
+
+#: admin.php:55
+msgid "Everything is OK. The database table exists."
+msgstr ""
+
+#: admin.php:58
+msgid "Database created successfully."
+msgstr ""
+
+#: admin.php:65
+msgid "Select Users for Permissions"
+msgstr ""
+
+#: uninstall.php:12
+msgid "Participant permissions table removed."
+msgstr ""
+
+# Add other translatable strings below this line.
