@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Participant Manager
  * Description: Manage participants with registration details and user permissions.
- * Version: 1.5
+ * Version: 1.5.5
  * Requires at least: 5.0
  * Requires PHP: 7.4
  * Author: Raihan Hossain
@@ -24,7 +24,7 @@ if ( ! class_exists( 'Participant_Manager_Plugin', false ) ) {
 	 * Main plugin controller.
 	 */
 	final class Participant_Manager_Plugin {
-		const VERSION           = '1.5';
+		const VERSION           = '1.5.5';
 		const TEXT_DOMAIN       = 'participant-manager';
 		const PAGE_PARTICIPANTS = 'participant_manager';
 		const PAGE_ADD          = 'add_participant';
@@ -503,15 +503,15 @@ if ( ! class_exists( 'Participant_Manager_Plugin', false ) ) {
 					<?php wp_nonce_field( 'participant_manager_verify', 'participant_manager_verify_nonce' ); ?>
 					<div class="pm-row">
 						<label for="participant-manager-registration-no"><?php esc_html_e( 'Registration No', 'participant-manager' ); ?></label>
-						<input type="text" id="participant-manager-registration-no" name="registration_no" placeholder="<?php esc_attr_e( 'Registration No', 'participant-manager' ); ?>" required>
+						<input type="text" id="participant-manager-registration-no" name="registration_no" placeholder="<?php esc_attr_e( 'e.g. 2026-TOR-ICLCM-SEP-014', 'participant-manager' ); ?>" required>
 					</div>
 					<div class="pm-row">
 						<label for="participant-manager-passport-no"><?php esc_html_e( 'Passport No', 'participant-manager' ); ?></label>
-						<input type="text" id="participant-manager-passport-no" name="passport_no" placeholder="<?php esc_attr_e( 'Passport No', 'participant-manager' ); ?>" required>
+						<input type="text" id="participant-manager-passport-no" name="passport_no" placeholder="<?php esc_attr_e( 'e.g. TB1402561', 'participant-manager' ); ?>" required>
 					</div>
 					<div class="pm-row pm-actions-row">
 						<button type="submit" name="participant_manager_verify" value="1" class="pm-primary-button">
-							<?php esc_html_e( 'Verify', 'participant-manager' ); ?>
+							<?php esc_html_e( 'Verify Registration', 'participant-manager' ); ?>
 						</button>
 					</div>
 				</form>

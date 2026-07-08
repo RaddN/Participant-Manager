@@ -4,7 +4,7 @@ Tags: participant, management, permissions
 Requires at least: 5.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.5
+Stable tag: 1.5.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,7 +42,7 @@ Participant Manager stores participant names, registration numbers, passport num
 
 == Changelog ==
 
-= 1.5 =
+= 1.5.5 =
 * Hardened request handling, database operations, nonces, escaping, and admin/frontend presentation.
 
 = 1.1 =
@@ -50,7 +50,7 @@ Participant Manager stores participant names, registration numbers, passport num
 
 == Upgrade Notice ==
 
-= 1.5 =
+= 1.5.5 =
 Security and interface hardening update.
 
 == Screenshots ==
